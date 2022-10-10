@@ -47,10 +47,10 @@
 <hr>
 
 <label for="num-of-letters">Number of letters per word</label>
-<input type="number" id="num-of-letters" bind:value={numOfLetters}>
+<input type="number" min="1" id="num-of-letters" bind:value={numOfLetters}>
 <br>
 <label for="num-of-words">Number of words to generate</label>
-<input type="number" id="num-of-words" bind:value={numOfWords}>
+<input type="number" min="1" id="num-of-words" bind:value={numOfWords}>
 <br>
 <button on:click={gen}>Generate</button>
 
